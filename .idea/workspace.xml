@@ -2,36 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04894bce-6d60-4f8d-a8a8-a79d14bec2a1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/migrations/2014_05_11_065311_createCoderBlockTables.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/migrations/2014_09_04_141239_create_follows_table.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/migrations/2014_09_04_141239_create_notifications_table.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/migrations/2014_09_05_211157_create_password_reminders_table.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/migrations/2014_09_07_144715_create_comments_table.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ngApp/app/views/partials/404.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Message/Consumer/Consumer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Message/EloquentMessageRepository.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Message/Message.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Message/Consumer/MessageConsumer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/v1/MessageController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Message/Processor/MessageProcessor.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Message/MessageRepository.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Message/Processor/Processor.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ngApp/app/scripts/controllers/partials/header.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Kernel.php" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Routes/Api/v1/api.php" afterPath="$PROJECT_DIR$/app/Http/Routes/Api/v1/api.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ngApp/app/app.js" afterPath="$PROJECT_DIR$/public/ngApp/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ngApp/app/views/commons/header.tpl.html" afterPath="$PROJECT_DIR$/public/ngApp/app/views/commons/header.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ngApp/app/styles/main.css.map" afterPath="$PROJECT_DIR$/public/ngApp/app/styles/main.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ngApp/app/styles/main.css" afterPath="$PROJECT_DIR$/public/ngApp/app/styles/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ngApp/app/views/partials/main.html" afterPath="$PROJECT_DIR$/public/ngApp/app/views/partials/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ngApp/app/scripts/controllers/main.js" afterPath="$PROJECT_DIR$/public/ngApp/app/scripts/controllers/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ngApp/app/styles/main.scss" afterPath="$PROJECT_DIR$/public/ngApp/app/styles/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ngApp/app/views/commons/scripts.blade.php" afterPath="$PROJECT_DIR$/public/ngApp/app/views/commons/scripts.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ngApp/app/scripts/controllers/stats.js" afterPath="$PROJECT_DIR$/public/ngApp/app/scripts/controllers/stats.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/migrations/2014_05_11_065311_createTables.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/database/migrations/2014_05_11_065311_createCoderBlockTables.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/database/migrations/2014_09_04_141239_create_follows_table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/database/migrations/2014_09_04_141239_create_notifications_table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/database/migrations/2014_09_05_211157_create_password_reminders_table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/database/migrations/2014_09_07_144715_create_comments_table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterPath="" />
     </list>
     <ignored path="currencyfair.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,11 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="2014_05_11_065311_createCoderBlockTables.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2014_05_11_065311_createCoderBlockTables.php">
+      <file leaf-file-name="2014_05_11_065311_createTables.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2014_05_11_065311_createTables.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3938619" vertical-offset="0" max-vertical-offset="9240">
-              <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.6993377" vertical-offset="440" max-vertical-offset="1540">
+              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -2713,10 +2691,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_05_11_065311_createCoderBlockTables.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_05_11_065311_createTables.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3938619" vertical-offset="0" max-vertical-offset="9240">
-          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.6993377" vertical-offset="440" max-vertical-offset="1540">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding />
         </state>
       </provider>
