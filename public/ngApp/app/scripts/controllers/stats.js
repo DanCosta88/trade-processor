@@ -10,8 +10,4 @@
 angular.module('ngAppApp')
   .controller('StatsCtrl', function ($scope) {
 
-        $scope.isActive = function(route) {
-            return route === $location.path();
-        }
-        
   });

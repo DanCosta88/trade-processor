@@ -7,16 +7,12 @@
 	"require": {
 		"laravel/framework": "5.0.*",
         "league/fractal": "0.11.*",
-        "intervention/image": "~2.0",
-        "fzaninotto/faker": "1.4.*@dev",
-        "illuminate/html": "5.*",
-        "graham-campbell/flysystem": "~2.0",
-        "tymon/jwt-auth": "0.5.*",
-        "barryvdh/laravel-cors": "0.4.x@dev"
+        "graham-campbell/flysystem": "~2.0"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "~4.0",
-		"phpspec/phpspec": "~2.1"
+		"phpspec/phpspec": "~2.1",
+        "fzaninotto/faker": "1.4.*@dev"
 	},
 	"autoload": {
 		"classmap": [

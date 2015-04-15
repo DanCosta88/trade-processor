@@ -8,19 +8,19 @@
  * Controller of the ngAppApp
  */
 angular.module('ngAppApp')
-    .controller('MainCtrl', function ($scope, $location) {
+.controller('MainCtrl', ['$scope', '$localStorage', function ($scope, $localStorage) {
 
-        $scope.instruction = {};
+    $scope.instruction = {};
+
+    if(! $localStorage.openInstruction) {
         $scope.instruction.isVisible = false;
+    } else {
+        $scope.instruction.isVisible = true;
+    }
 
-        $scope.instruction.show = function() {
-            $scope.instruction.isVisible = true;
-        };
+    $scope.instruction.show = function() {
+        $scope.instruction.isVisible = true;
+        $localStorage.openInstruction = true;
+    };
 
-        $scope.isActive = function(route) {
-            console.log($location.path());
-            return route === $location.path();
-        }
-
-
-    });
+}]);

@@ -8,7 +8,9 @@
 <script src="{{ URL::to('/')  }}/ngApp/bower_components/angular-route/angular-route.js"></script>
 <script src="{{ URL::to('/')  }}/ngApp/bower_components/angular-sanitize/angular-sanitize.js"></script>
 <script src="{{ URL::to('/')  }}/ngApp/bower_components/angular-touch/angular-touch.js"></script>
+<script src="<?php echo URL::to('/') ?>/ngApp/bower_components/ngstorage/ngStorage.js"></script>
 
 <script src="{{ URL::to('/')  }}/ngApp/app/app.js"></script>
+<script src="{{ URL::to('/')  }}/ngApp/app/scripts/controllers/partials/header.js"></script>
 <script src="{{ URL::to('/')  }}/ngApp/app/scripts/controllers/main.js"></script>
 <script src="{{ URL::to('/')  }}/ngApp/app/scripts/controllers/stats.js"></script>

@@ -15,7 +15,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ngStorage'
     ])
 
     .constant('urls', {
@@ -47,7 +48,8 @@ angular
               templateUrl: 'http://currencyfair.dev/ngApp/app/views/partials/real-time.html',
               controller: 'StatsCtrl'
           })
-          //.otherwise({
-          //  redirectTo: '/dashboard'
-          //});
+          .otherwise({
+                templateUrl: 'http://currencyfair.dev/ngApp/app/views/partials/404.html',
+                controller: 'StatsCtrl'
+          });
     });
