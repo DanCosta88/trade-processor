@@ -1,0 +1,55 @@
+<div class="jumbotron">
+  <h2>Market Trade Processor</h2>
+  <p class="lead">
+    <img src="http://currencyfair.dev/ngApp/app/images/world.png" alt="Market Trade Processor"><br>
+      Get better exchange rates when transferring money internationally!
+  </p>
+  <p><a class="btn btn-lg btn-success" ng-click="instruction.show()" ng-show="! instruction.isVisible" >How does it work?<span class="glyphicon glyphicon-icon-circle-question-mark"></span></a></p>
+</div>
+
+
+<div class="section-container" ng-show="instruction.isVisible">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 section-description">
+                <h3>Market Trade Processor Workflow</h3>
+                <div class="divider-1"><span></span></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <div class="row">
+                    <div class="col-sm-4 layout-box">
+                        <a href="layout-1/index.html">
+                            <img src="http://azmind.com/premium/marco/v1-6/choose-layout-assets/1.png" alt="">
+                        </a>
+                        <div class="description-area">
+                            <div class="title"><strong>Consumption.</strong></div>
+                            <div class="content">Click here to use the related endpoint which consume trade messages in real-time.</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 layout-box">
+                        <a href="layout-2/index.html">
+                            <img src="http://azmind.com/premium/marco/v1-6/choose-layout-assets/2.png" alt="">
+                        </a>
+                        <div class="description-area">
+                            <div class="title"><strong>Processor.</strong></div>
+                            <div class="content">The message will be process and prepare for visual rendering.</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 layout-box">
+                        <a href="layout-3/index.html">
+                            <img src="http://azmind.com/premium/marco/v1-6/choose-layout-assets/3.png" alt="">
+                        </a>
+                        <div class="description-area">
+                            <div class="title"> <strong>Graph Rendering.</strong> </div>
+                            <div class="content"> The frontend part of the project. <br />Click on this square (<i class="glyphicon glyphicon-arrow-up"> </i>) for demo. </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-image-shadow" ng-show="instruction.isVisible"></div>
+</div>

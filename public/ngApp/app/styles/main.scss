@@ -1,0 +1,290 @@
+$icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+/*
+*  Mixin Commons
+*/
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin linear-transition($seconds) {
+  -webkit-transition:$seconds linear all;
+  -moz-transition:$seconds linear all;
+  -o-transition:$seconds linear all;
+  transition:$seconds linear all;
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding: 0;
+  background-color: #efefef;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+.header {
+  .navbar {
+
+    border-radius: 0px;
+
+    .container {
+      max-width: 1280px !important;
+    }
+  }
+}
+
+/* Custom page footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #eff3f4;
+
+
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+
+    .text-muted {
+        margin: 20px 0;
+    }
+  }
+
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+
+    -webkit-transition:0.2s linear all;
+    -moz-transition:0.52s linear all;
+    -o-transition:0.2s linear all;
+    transition:0.2s linear all;
+  }
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+
+.section-container {
+  font-size: 16px;
+  font-weight: 300;
+  color: #888;
+  line-height: 30px;
+  text-align: center;
+  transition: all 1s ease 0s;
+  margin: 0 auto 80px;
+
+  .container {
+    padding-bottom: 20px;
+    background: #fff;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+    width: 100%;
+
+    .row {
+
+      .section-description {
+        margin-top: 30px;
+        padding-bottom: 0px;
+        text-align: center;
+
+        h3 {
+          font-size: 22px;
+          font-weight: 300;
+          color: #555;
+          line-height: 30px;
+          text-align: center;
+        }
+
+        .divider-1 span {
+          display: inline-block;
+          width: 200px;
+          height: 1px;
+          background: #ddd;
+          text-align: center;
+        }
+
+      }
+
+    }
+
+  }
+
+  .row {
+
+    .layout-box {
+      padding: 30px 20px 20px 20px;
+
+      img {
+        border: 5px solid #eee;
+        -o-transition: all .3s;
+        -moz-transition: all .3s;
+        -webkit-transition: all .3s;
+        -ms-transition: all .3s;
+        transition: all .3s;
+        max-width: 100%;
+      }
+
+      a:hover img {
+        border-color: #ddd;
+      }
+
+      .description-area {
+
+        .title {
+          font-size: 15px;
+          margin-bottom: 5px;
+        }
+
+        .content {
+          font-size: 13px;
+          line-height: 22px;
+        }
+
+      }
+
+
+    }
+
+  }
+
+}
+
+.header-image-shadow {
+  background: url('../images/shadow.png') no-repeat bottom center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #888;
+  line-height: 30px;
+  text-align: center;
+  height: 24px;
+  width: 100%;
+}
+
+
+/*
+* Twitter Bootstrap Customization
+*/
+
+.navbar-default {
+
+  .navbar-nav > .active > a {
+    color: #ffffff;
+    background: #396172;
+    font-size: 12px;
+  }
+  .navbar-nav > .active > a:hover {
+    font-size: 12px;
+    background: #396172;
+    color: #ffffff;
+  }
+  .navbar-nav > .active > a:focus {
+    background: #396172;
+    color: #ffffff;
+    font-size: 12px;
+  }
+
+}
+
+
+/*
+* AngularJS Custom Rules
+*/
+
+.ng-hide-add {
+  @include linear-transition(1s);
+  opacity: 1;
+}
+.ng-hide-add.ng-hide-add-active {
+  opacity: 0;
+}
+
+.ng-hide-remove {
+
+  opacity: 0;
+}
+.ng-hide-remove.ng-hide-remove-active {
+  opacity: 1;
+}
+
+
