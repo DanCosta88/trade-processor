@@ -2,6 +2,7 @@
 namespace App\Http\Controllers\Api\v1;
 
 use App\Http\Controllers\Api\ApiController;
+use App\Message\Consumer\MessageConsumer;
 use Illuminate\Http\Request;
 use League\Fractal\Manager;
 
@@ -17,16 +18,22 @@ class MessageController extends ApiController {
 	| controller as you wish. It is just here to get your app started!
 	|
 	*/
+    /**
+     * @var MessageConsumer
+     */
+    protected $consumer;
 
     /**
      * Create a new Message controller instance.
      *
      * @param Manager $fractal
+     * @param MessageConsumer $consumer
      */
-	public function __construct(Manager $fractal)
+	public function __construct(Manager $fractal, MessageConsumer $consumer)
 	{
         parent::__construct($fractal);
-	}
+        $this->consumer = $consumer;
+    }
 
     /**
      * Display a listing of the messages.
@@ -52,11 +59,25 @@ class MessageController extends ApiController {
     /**
      * Consume the trade message.
      *
+     * @param Request $request
      * @return Response
      */
     public function consume(Request $request)
     {
-        return $this->errorUnauthorized('Unauthorized request.');
+        $input = $request->only(
+            'userId',
+            'currencyFrom',
+            'currencyTo',
+            'amountSell',
+            'amountBuy',
+            'rate',
+            'timePlaced',
+            'originatingCountry'
+        );
+
+//        $consumed = $this->consumer->consume($input);
+
+        return $this->respondWithSuccess('Message consumed.');
     }
 
     /**

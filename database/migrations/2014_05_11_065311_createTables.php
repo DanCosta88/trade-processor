@@ -13,6 +13,7 @@ class CreateCoderblockTables extends Migration {
     {
         Schema::dropIfExists('users');
         Schema::dropIfExists('messages');
+        Schema::dropIfExists('countries');
     }
 
 	/**
@@ -29,8 +30,6 @@ class CreateCoderblockTables extends Migration {
                 $table->engine = 'InnoDB';                
                 $table->increments('id');
 
-                // $table->primary('id');
-
                 $table->timestamps();
                 $table->softDeletes();
             });
@@ -41,10 +40,25 @@ class CreateCoderblockTables extends Migration {
                 $table->engine = 'InnoDB';
                 $table->increments('id');
                 $table->mediumInteger('user_id')->unsigned();
-                $table->string('ip_address', 20)->nullable();
-                $table->string('user_agent', 255)->nullable();
+                $table->mediumInteger('country_id')->unsigned();
+                $table->string('currencyFrom', 20)->nullable();
+                $table->string('currencyTo', 20)->nullable();
+                $table->string('amountSell', 20)->nullable();
+                $table->string('amountBuy', 20)->nullable();
+                $table->string('rate', 20)->nullable();
+                $table->time('timePlaced', 20)->nullable();
 
-                // $table->primary('id');
+                $table->timestamps();
+                $table->softDeletes();
+            });
+
+            Schema::create('countries', function($table)
+            {
+                $table->engine = 'InnoDB';
+                $table->increments('id');
+                $table->string('continent_id', 2);
+                $table->string('country_name', 100);
+                $table->string('country_iso_code', 2);
 
                 $table->timestamps();
                 $table->softDeletes();
