@@ -8,6 +8,6 @@
  * Controller of the ngAppApp
  */
 angular.module('ngAppApp')
-  .controller('StatsCtrl', function ($scope) {
+  .controller('StatsController', function ($scope) {
 
   });

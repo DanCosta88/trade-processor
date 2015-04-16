@@ -15,8 +15,7 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch',
-    'ngStorage'
+    'ngTouch'
     ])
 
     .constant('urls', {
@@ -38,18 +37,18 @@ angular
         $routeProvider
           .when('/', {
             templateUrl: 'http://currencyfair.dev/ngApp/app/views/partials/main.html',
-            controller: 'MainCtrl'
+            controller: 'MainController'
           })
           .when('/stats', {
             templateUrl: 'http://currencyfair.dev/ngApp/app/views/partials/stats.html',
-            controller: 'StatsCtrl'
+            controller: 'StatsController'
           })
           .when('/real-time', {
               templateUrl: 'http://currencyfair.dev/ngApp/app/views/partials/real-time.html',
-              controller: 'StatsCtrl'
+              controller: 'RealTimeController'
           })
           .otherwise({
                 templateUrl: 'http://currencyfair.dev/ngApp/app/views/partials/404.html',
-                controller: 'StatsCtrl'
+                controller: 'MainController'
           });
     });

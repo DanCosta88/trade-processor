@@ -12,5 +12,6 @@
 
 <script src="{{ URL::to('/')  }}/ngApp/app/app.js"></script>
 <script src="{{ URL::to('/')  }}/ngApp/app/scripts/controllers/partials/header.js"></script>
-<script src="{{ URL::to('/')  }}/ngApp/app/scripts/controllers/main.js"></script>
-<script src="{{ URL::to('/')  }}/ngApp/app/scripts/controllers/stats.js"></script>
+<script src="{{ URL::to('/')  }}/ngApp/app/scripts/controllers/MainController.js"></script>
+<script src="{{ URL::to('/')  }}/ngApp/app/scripts/controllers/StatsController.js"></script>
+<script src="{{ URL::to('/')  }}/ngApp/app/scripts/controllers/RealTimeController.js"></script>

@@ -8,19 +8,20 @@
  * Controller of the ngAppApp
  */
 angular.module('ngAppApp')
-.controller('MainCtrl', ['$scope', '$localStorage', function ($scope, $localStorage) {
+.controller('MainController', ['$scope', function ($scope) {
 
     $scope.instruction = {};
+    $scope.now = new Date();
 
-    if(! $localStorage.openInstruction) {
+    $scope.exp = new Date($scope.now.getFullYear(), $scope.now.getMonth(), $scope.now.getDate()+1);
+
+
+    if(! $scope.instruction.isVisible) {
         $scope.instruction.isVisible = false;
-    } else {
-        $scope.instruction.isVisible = true;
     }
 
     $scope.instruction.show = function() {
         $scope.instruction.isVisible = true;
-        $localStorage.openInstruction = true;
     };
 
 }]);
